@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Health - Medical Website Template</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords"
+        content="Healthcare, medical services, emergency care, patient-centered, advanced technology, expert medical staff, wellness programs, rehabilitation services, surgical procedures, diagnostic imaging, pediatrics, geriatrics, women's health, cardiology, oncology, neurology, mental health, holistic care, community outreach, health education.">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-card {
+            flex: 1 1 30%;
+            margin: 15px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.5s ease-in-out;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-info {
+            margin-top: 10px;
+            text-align: center;
+            margin-top: 10px;
+            padding: 30px;
+        }
+
+        .navbar-centre .navbar-nav>li>a {
+            font-size: 18px;
+            padding: 20px 15px;
+        }
+
+        .navbar-centre .navbar-nav>li>a:hover,
+        .navbar-centre .navbar-nav>li>a:focus {
+            color: #ffffff;
+            background-color: #337ab7;
+        }
+
+        .team-section,
+        .services-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 15px;
+        }
+
+        .team-container,
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-button,
+        .service-button {
+            background-color: #337ab7;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .team-button:hover,
+        .team-button:focus,
+        .service-button {
+            background-color: #285a8e;
+            outline: none;
+            transform: scale(1.05);
+
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer .footer-thumb {
+            margin-bottom: 20px;
+        }
+
+        footer h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        footer .contact-info p,
+        footer .opening-hours p,
+        footer .footer-link a {
+            color: #ccc;
+        }
+
+        footer .social-icon a {
+            color: #fff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icon a:hover {
+            color: #68b1ec;
+        }
+
+        footer .copyright-text {
+            margin: 20px 0 0;
+        }
+
+        .service-icon {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .center-button {
+            display: block;
+            margin: 0 auto;
+        }
+        .servicesli{
+            text-align: left;
+           margin-right: 50px;
+        }
+        @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.specialist-section {
+    text-align: center;
+    padding: 50px 15px;
+    
+    color: white;
+}
+
+.specialist-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.specialist-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.specialist-section .btn-view-all {
+    background-color: #2d2c5b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.specialist-section .btn-view-all:hover {
+    background-color: #44b89d;
+}
+
+.specialist-container {
+    margin-top: 30px;
+}
+
+.specialist-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+    height: 380px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    color: black;
+}
+
+.specialist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.specialist-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.specialist-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    left: -40px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    right: -40px;
+}
+
+   
+    </style>
+
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-5">
+                    <p>Welcome to LifeLine Hospital</p>
+                </div>
+
+                <div class="col-md-8 col-sm-7 text-align-right">
+                    <span class="phone-icon"><i class="fa fa-phone"></i> 0333-8222123</span>
+                    <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 24/7 Hours
+                        (Mon-Sun)</span>
+                    <span class="email-icon"><i class="fas fa-envelope"></i> <a target="_blank"
+                            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Flifelinehospitalpakistan&h=AT25ceLkPDd6TxRrzrxNlX9ynnF6W3TahKdNrJ9-DPv075s8VlXsCaerb7q9V5laDSxAZC5cnK6nWbHjw0tRUNyOqafJtHC3EmOgtpxN6jA9APPOA6g6_0UBv3mhoiqjUGECw6cFHjThCuTjCYbe">Instagram</a></span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MENU -->
+    <section class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a href="index.html" class="navbar-brand"></i><img class="navbar-brand" src="images/Lifeline Logo.png"
+                        alt=""></a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="navbar-centre">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#top" class="smoothScroll"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#about" class="smoothScroll"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#team" class="smoothScroll"><i class="fas fa-user-md"></i> Doctors</a></li>
+                        <li><a href="#services" class="smoothScroll"><i class="fas fa-list-alt"></i> Services</a></li>
+                        <li><a href="#contact" class="smoothScroll"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item item-first">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Let's make your life happier</h3>
+                                <h1>Healthy Living</h1>
+                                <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our
+                                    Doctors</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item-second">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Wanna Know more?</h3>
+                                <h1>Click on About us</h1>
+                                <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More
+                                    About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s"><i class="fas fa-hospital"></i> Welcome to Your
+                            Health Center</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <p>Welcome to Life Line Hospital, where compassionate care meets cutting-edge medical
+                                technology. Our mission is to provide exceptional healthcare services to our community,
+                                ensuring every patient receives personalized and comprehensive care in a comforting and
+                                supportive environment.</p>
+                            <p>Whether you need urgent medical attention or are looking for a trusted healthcare
+                                provider for ongoing care, Life Line Hospital is here for you. Contact us today to learn
+                                more about our services or to schedule an appointment. Together, we can create a
+                                healthier future for you and your loved ones.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="services" data-stellar-background-ratio="1">
+        <div class="container services-section">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.1s"><i class="fas fa-cogs"></i> Our Services</h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="services-container">
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.2s">
+                            <i class="fas fa-heartbeat service-icon"></i>
+                            <div class="service-info">
+                                <h3>Cardiology</h3>
+                                <p>We provide comprehensive heart care and wellness services.</p>
+
+                            </div>
+                        </div>
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.3s">
+                            <i class="fas fa-x-ray service-icon"></i>
+                            <div class="service-info">
+                                <h3>Radiology</h3>
+                                <p>Advanced imaging services for accurate diagnosis and treatment.</p>
+
+                            </div>
+                        </div>
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.4s">
+                            <i class="fas fa-stethoscope service-icon"></i>
+                            <div class="service-info">
+                                <h3>General Health</h3>
+                                <p>Comprehensive health services for all age groups.</p>
+
+                            </div>
+                        </div>
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.5s">
+                            <i class="fas fa-tooth service-icon"></i>
+                            <div class="service-info">
+                                <h3>Dentistry</h3>
+                                <p>Expert dental care for maintaining oral health.</p>
+
+                            </div>
+                        </div>
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.6s">
+                            <i class="fas fa-pills service-icon"></i>
+                            <div class="service-info">
+                                <h3>Pharmacy</h3>
+                                <p>Convenient access to medications and pharmaceutical services.</p>
+
+                            </div>
+                        </div>
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.7s">
+                            <i class="fas fa-user-md service-icon"></i>
+                            <div class="service-info">
+                                <h3>Internal Medicine</h3>
+                                <p>Specialized care for adult patients for diagnosis and treatment.</p>
+
+                            </div>
+                        </div>
+                        <div class="service-card wow fadeInUp" data-wow-delay="0.8s">
+                            <i class="fas fa-child service-icon"></i>
+                            <div class="service-info">
+                                <h3>Pediatrics</h3>
+                                <p>Medical care for infants, children, and adolescents.</p>
+
+                            </div>
+                        </div>
+                        <!-- Repeat the above block for more services -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specialists" class="specialist-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Meet our Specialists</h2>
+                    <p>Our Expert healthcare services for children, adolescents, adults and seniors.</p>
+                    <button onclick="window.location.href='index copy.html'"  class="btn-view-all" >VIEW ALL</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="specialist-container owl-carousel owl-theme">
+                        <div class="specialist-card">
+                            <img src="LIfeline Hospital PNG/Dr. Iftikhar .png" alt="Specialist Name">
+                            <h3>Prof Dr Iftikhar Haider</h3>
+                            <p>Internal Medicine</p>
+                        </div>
+                        <div class="specialist-card">
+                            <img src="LIfeline Hospital PNG/Dr Fahad.png" alt="Specialist Name">
+                            <h3>Dr Danish Khuwaja</h3>
+                            <p>Internal Medicine</p>
+                        </div>
+                        <div class="specialist-card">
+                            <img src="LIfeline Hospital PNG/Dr. Shumaila Kamran.png" alt="Specialist Name">
+                            <h3>Dr Shumaila Kamran</h3>
+                            <p>General & Laparoscopic Surgery</p>
+                        </div>
+                        <div class="specialist-card">
+                            <img src="LIfeline Hospital PNG/Dr..png" alt="Specialist Name">
+                            <h3>Dr Syed Danish Ali</h3>
+                            <p>Orthopaedic & Trauma Surgery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- TEAM -->
+    <section id="team" data-stellar-background-ratio="1">
+        <div class="container team-section">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.1s"><i class="fas fa-user-md"></i> Our Doctors</h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="team-container">
+                        <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                            <img src="_HK00513.JPG" class="img-responsive" alt="">
+                            <div class="team-info">
+                                <button class="team-button center-button"onclick="window.location.href='index copy.html'">Click Here To View Doctors</button>
+                            </div>
+                        </div>
+                        <!-- Repeat the above block for more team members -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer data-stellar-background-ratio="5">
+        <div class="container">
+            <div class="row">
+                <div id="contact" class="col-md-6 col-sm-6">
+                    <div class="footer-thumb">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                        <p>For more information or to get in touch with our team, please visit our Contact Us page.</p>
+                        <div class="contact-info">
+                            <p><i class="fa fa-phone"></i> 0333-8222123</p>
+                            <p><i class="fa fa-phone"></i> 0333-8222127</p>
+                            <p><i class="fas fa-envelope"></i> <a target="_blank"
+                                    href="https://www.facebook.com/lifelinehospitalofficial">https://www.facebook.com/lifelinehospitalofficial</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-thumb">
+                        <div class="opening-hours">
+                            <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                            <p>Monday - Sunday <span>24/7</span></p><br>
+                            <br>
+                            <h4>Our Address</h4>
+                            <Address>D-14 Shahrah-e-Sher Shah Suri Block B North Nazimabad Town, Karachi</Address>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 border-top">
+                   
+                    
+                    <div class="col-md-2 col-sm-2 text-align-center">
+                        <div class="angle-up-btn">
+                            <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i
+                                    class="fa fa-angle-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@wowjs/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $(".specialist-container").owlCarousel({
+              items: 3, // Display 3 items in the carousel
+              loop: true,
+              margin: 30, // Adjust margin as needed
+              nav: true, // Show navigation arrows
+              navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"], // Custom navigation icons
+              autoplay: true,
+              autoplayTimeout: 3000,
+              autoplayHoverPause: true,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  768:{
+                      items:2
+                  },
+                  992:{
+                      items:3
+                  }
+              }
+          });
+      });
+  </script>
+   
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
